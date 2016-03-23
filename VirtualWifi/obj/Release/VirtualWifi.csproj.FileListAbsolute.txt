@@ -1,0 +1,8 @@
+c:\users\marvi\documents\visual studio 2015\Projects\VirtualWifi\VirtualWifi\bin\Release\VirtualWifi.exe.config
+c:\users\marvi\documents\visual studio 2015\Projects\VirtualWifi\VirtualWifi\bin\Release\VirtualWifi.exe
+c:\users\marvi\documents\visual studio 2015\Projects\VirtualWifi\VirtualWifi\bin\Release\VirtualWifi.pdb
+c:\users\marvi\documents\visual studio 2015\Projects\VirtualWifi\VirtualWifi\obj\Release\VirtualWifi.Form1.resources
+c:\users\marvi\documents\visual studio 2015\Projects\VirtualWifi\VirtualWifi\obj\Release\VirtualWifi.Properties.Resources.resources
+c:\users\marvi\documents\visual studio 2015\Projects\VirtualWifi\VirtualWifi\obj\Release\VirtualWifi.csproj.GenerateResource.Cache
+c:\users\marvi\documents\visual studio 2015\Projects\VirtualWifi\VirtualWifi\obj\Release\VirtualWifi.exe
+c:\users\marvi\documents\visual studio 2015\Projects\VirtualWifi\VirtualWifi\obj\Release\VirtualWifi.pdb
