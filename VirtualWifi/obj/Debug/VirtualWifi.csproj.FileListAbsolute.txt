@@ -7,3 +7,12 @@ c:\users\marvi\documents\visual studio 2015\Projects\VirtualWifi\VirtualWifi\obj
 c:\users\marvi\documents\visual studio 2015\Projects\VirtualWifi\VirtualWifi\obj\Debug\VirtualWifi.csproj.GenerateResource.Cache
 c:\users\marvi\documents\visual studio 2015\Projects\VirtualWifi\VirtualWifi\obj\Debug\VirtualWifi.exe
 c:\users\marvi\documents\visual studio 2015\Projects\VirtualWifi\VirtualWifi\obj\Debug\VirtualWifi.pdb
+C:\Users\Eigenaar\Desktop\VirtualWifi-master\VirtualWifi\bin\Debug\VirtualWifi.exe.config
+C:\Users\Eigenaar\Desktop\VirtualWifi-master\VirtualWifi\obj\Debug\VirtualWifi.exe
+C:\Users\Eigenaar\Desktop\VirtualWifi-master\VirtualWifi\obj\Debug\VirtualWifi.pdb
+C:\Users\Eigenaar\Desktop\VirtualWifi-master\VirtualWifi\obj\Debug\VirtualWifi.csprojResolveAssemblyReference.cache
+C:\Users\Eigenaar\Desktop\VirtualWifi-master\VirtualWifi\obj\Debug\VirtualWifi.Form1.resources
+C:\Users\Eigenaar\Desktop\VirtualWifi-master\VirtualWifi\obj\Debug\VirtualWifi.Properties.Resources.resources
+C:\Users\Eigenaar\Desktop\VirtualWifi-master\VirtualWifi\obj\Debug\VirtualWifi.csproj.GenerateResource.Cache
+C:\Users\Eigenaar\Desktop\VirtualWifi-master\VirtualWifi\bin\Debug\VirtualWifi.exe
+C:\Users\Eigenaar\Desktop\VirtualWifi-master\VirtualWifi\bin\Debug\VirtualWifi.pdb

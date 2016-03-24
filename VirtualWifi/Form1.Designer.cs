@@ -29,21 +29,28 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.frequentlyAskedQuestionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cannotStartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.button3 = new System.Windows.Forms.Button();
             this.txtResult = new System.Windows.Forms.RichTextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -65,55 +72,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Settings";
             // 
-            // menuStrip1
+            // checkBox1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(537, 24);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 478);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(537, 22);
-            this.statusStrip1.TabIndex = 3;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Location = new System.Drawing.Point(271, 27);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(253, 154);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Start/Stop";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(68, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "IhasWifi";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 39);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Wifi SSID:\r\n\r\nPassword:";
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Location = new System.Drawing.Point(68, 98);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(97, 17);
+            this.checkBox1.TabIndex = 3;
+            this.checkBox1.Text = "Hide Password";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // textBox2
             // 
@@ -130,9 +100,127 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(64, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Set";
+            this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 39);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Wifi SSID:\r\n\r\nPassword:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(68, 46);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(158, 20);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "IhasWifi";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(537, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.informationToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // informationToolStripMenuItem
+            // 
+            this.informationToolStripMenuItem.Name = "informationToolStripMenuItem";
+            this.informationToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.informationToolStripMenuItem.Text = "Information";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(134, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.frequentlyAskedQuestionsToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // frequentlyAskedQuestionsToolStripMenuItem
+            // 
+            this.frequentlyAskedQuestionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cannotStartToolStripMenuItem});
+            this.frequentlyAskedQuestionsToolStripMenuItem.Name = "frequentlyAskedQuestionsToolStripMenuItem";
+            this.frequentlyAskedQuestionsToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.frequentlyAskedQuestionsToolStripMenuItem.Text = "Frequently asked questions";
+            // 
+            // cannotStartToolStripMenuItem
+            // 
+            this.cannotStartToolStripMenuItem.Name = "cannotStartToolStripMenuItem";
+            this.cannotStartToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.cannotStartToolStripMenuItem.Text = "Cannot start?";
+            this.cannotStartToolStripMenuItem.Click += new System.EventHandler(this.cannotStartToolStripMenuItem_Click);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 478);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(537, 22);
+            this.statusStrip1.TabIndex = 3;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(172, 17);
+            this.toolStripStatusLabel1.Text = "Made by Marf and Sadusko. 0.1";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Location = new System.Drawing.Point(271, 27);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(253, 154);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Start/Stop";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(63, 43);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(153, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Start Wifi";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -157,34 +245,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Console";
             // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(102, 17);
-            this.toolStripStatusLabel1.Text = "Made by Marf. 0.1";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(63, 43);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(153, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Start Wifi";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
             // txtResult
             // 
             this.txtResult.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -200,18 +260,16 @@
             this.txtResult.TabIndex = 0;
             this.txtResult.Text = "";
             // 
-            // checkBox1
+            // toolStripSeparator2
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(68, 98);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(97, 17);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Hide Password";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(214, 6);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.aboutToolStripMenuItem.Text = "About";
             // 
             // Form1
             // 
@@ -257,6 +315,13 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.RichTextBox txtResult;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ToolStripMenuItem frequentlyAskedQuestionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cannotStartToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem informationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 
